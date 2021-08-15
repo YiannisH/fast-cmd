@@ -1,4 +1,4 @@
-# yhadji-com
+# fast-cmd
 
 ## Run with
 **`uvicorn main:app --reload`**
