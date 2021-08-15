@@ -12,4 +12,5 @@ export dt=`date +"%d-%m-%Y-%s"`
 docker build -t yhadji/fastapi:${dt} .
 docker push yhadji/fastapi:${dt}
 docker run --network=host -p 18000:8000 --rm -d yhadji/fastapi:v1
+docker run --rm -d -p 8000:8000 yhadji/fastapi:v1
 ```

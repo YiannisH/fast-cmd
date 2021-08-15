@@ -3,4 +3,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 WORKDIR  /app
 COPY . .
-ENTRYPOINT ["uvicorn", "main:app", "--port=8000" ]
+ENTRYPOINT ["supervisord", "-n" ]
